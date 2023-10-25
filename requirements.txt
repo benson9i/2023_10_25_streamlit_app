@@ -1,5 +1,4 @@
 pandas==1.4.4
-Pillow==9.2.0
 Pillow==10.1.0
 plotly==5.9.0
 prophet==1.1.5
