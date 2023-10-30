@@ -12,7 +12,7 @@ def load_lottiefil(filepath: str):
     with open(filepath, "r") as f:
         return json.load(f)
 
-lottie_chat = load_lottiefil("/Users/bennson/Desktop/DataScienceJourney/Streamlit/streamlit_published_app/lottie/chat_lottie.json")
+lottie_chat = load_lottiefil("lottie/chat_lottie.json")
 
 col3, col4, col5 = st.columns([1,2,1], gap="small")
 with col3:

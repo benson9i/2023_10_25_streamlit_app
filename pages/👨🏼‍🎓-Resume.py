@@ -9,8 +9,8 @@ import json
 
 
 # ---- Path settings -----
-resume_file = "/Users/bennson/Desktop/DataScienceJourney/Streamlit/streamlit_published_app/assets/CV.pdf"
-profile_pic = "/Users/bennson/Desktop/DataScienceJourney/Streamlit/streamlit_published_app/assets/headshot.png"
+resume_file = "assets/CV.pdf"
+profile_pic = "assets/headshot.png"
 
 # ---- General settings ----
 page_title = "Digital CV | Dominik Bernard"
@@ -173,7 +173,7 @@ def load_lottiefil(filepath: str):
 
 
 lottie_cv = load_lottiefil(
-    "/Users/bennson/Desktop/DataScienceJourney/Streamlit/streamlit_published_app/lottie/cv_lottie.json")
+    "lottie/cv_lottie.json")
 
 col3, col4, col5 = st.columns([1,2,1], gap="small")
 with col3:

@@ -35,7 +35,7 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-local_css("/Users/bennson/Desktop/DataScienceJourney/Streamlit/streamlit_published_app/style/style.css")
+local_css("style/style.css")
 
 # ---- widget section ----
 
@@ -46,7 +46,7 @@ def load_lottiefil(filepath: str):
 
 
 lottie_email = load_lottiefil(
-    "/Users/bennson/Desktop/DataScienceJourney/Streamlit/streamlit_published_app/lottie/email_lottie.json")
+    "lottie/email_lottie.json")
 
 col3, col4, col5 = st.columns([1,2,1], gap="small")
 with col3:
