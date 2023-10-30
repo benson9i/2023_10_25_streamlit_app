@@ -16,7 +16,7 @@ st.write("With this app, you can view interactive line charts of different finan
 
 # Load the data
 data = pd.read_csv(
-    "/Users/bennson/Desktop/DataScienceJourney/Streamlit/streamlit_published_app/data/data_for_app.csv")
+    "data/data_for_app.csv")
 data['date'] = pd.to_datetime(data['date'])
 
 # ---- widget section ----
@@ -28,7 +28,7 @@ def load_lottiefil(filepath: str):
 
 
 lottie_coding = load_lottiefil(
-    "/Users/bennson/Desktop/DataScienceJourney/Streamlit/streamlit_published_app/lottie/coding_lottie.json")
+    "lottie/coding_lottie.json")
 
 col1, col2, col3 = st.columns(3, gap="small")
 with col1:
@@ -191,7 +191,7 @@ else:
 
 
 lottie_weird = load_lottiefil(
-    "/Users/bennson/Desktop/DataScienceJourney/Streamlit/streamlit_published_app/lottie/weird_lottie.json")
+    "lottie/weird_lottie.json")
 
 col1, col2, col3 = st.columns([1,2,1], gap="small")
 with col1:
