@@ -1,4 +1,4 @@
-# cd /Users/bennson/Desktop/Data\ Science\ Journey/Streamlit/indices_crypto_app/
+# cd /Users/bennson/Desktop/DataScienceJourney/Streamlit/streamlit_published_app/
 # streamlit run 💹-Charts.py
 
 import json
@@ -16,27 +16,30 @@ st.write("With this app, you can view interactive line charts of different finan
 
 # Load the data
 data = pd.read_csv(
-    "/Users/bennson/Desktop/Data Science Journey/Streamlit/indices_crypto_app/data_for_app.csv")
+    "/Users/bennson/Desktop/DataScienceJourney/Streamlit/streamlit_published_app/data/data_for_app.csv")
 data['date'] = pd.to_datetime(data['date'])
 
 # ---- widget section ----
+
+
 def load_lottiefil(filepath: str):
     with open(filepath, "r") as f:
         return json.load(f)
-    
+
+
 lottie_coding = load_lottiefil(
-    "/Users/bennson/Desktop/Data Science Journey/Streamlit/indices_crypto_app/lottie/coding_lottie.json")
+    "/Users/bennson/Desktop/DataScienceJourney/Streamlit/streamlit_published_app/lottie/coding_lottie.json")
 
 col1, col2, col3 = st.columns(3, gap="small")
 with col1:
     st.write("")
-    
+
 with col2:
     st_lottie(
         lottie_coding,
         height=300,
         width=300
-        )
+    )
 
 with col3:
     st.write("")
@@ -187,21 +190,19 @@ else:
     st.write("Make your selections in the sidebar, then press 'Show Plots'!")
 
 
-
 lottie_weird = load_lottiefil(
-    "/Users/bennson/Desktop/Data Science Journey/Streamlit/indices_crypto_app/lottie/weird_lottie.json")
+    "/Users/bennson/Desktop/DataScienceJourney/Streamlit/streamlit_published_app/lottie/weird_lottie.json")
 
-col1, col2, col3 = st.columns(3, gap="small")
+col1, col2, col3 = st.columns([1,2,1], gap="small")
 with col1:
     st.write("")
-    
+
 with col2:
     st_lottie(
         lottie_weird,
         height=300,
         width=300
-        )
+    )
 
 with col3:
     st.write("")
-    

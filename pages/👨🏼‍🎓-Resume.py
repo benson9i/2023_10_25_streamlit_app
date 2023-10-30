@@ -1,4 +1,4 @@
-# cd /Users/bennson/Desktop/Data\ Science\ Journey/Streamlit/indices_crypto_app/
+# cd /Users/bennson/Desktop/DataScienceJourney/Streamlit/streamlit_published_app/
 # streamlit run 💹-Charts.py
 
 import streamlit as st
@@ -9,8 +9,8 @@ import json
 
 
 # ---- Path settings -----
-resume_file = "/Users/bennson/Desktop/Data Science Journey/Streamlit/indices_crypto_app/assets/CV.pdf"
-profile_pic = "/Users/bennson/Desktop/Data Science Journey/Streamlit/indices_crypto_app/assets/headshot.png"
+resume_file = "/Users/bennson/Desktop/DataScienceJourney/Streamlit/streamlit_published_app/assets/CV.pdf"
+profile_pic = "/Users/bennson/Desktop/DataScienceJourney/Streamlit/streamlit_published_app/assets/headshot.png"
 
 # ---- General settings ----
 page_title = "Digital CV | Dominik Bernard"
@@ -57,7 +57,7 @@ st.write(
     """
 - 💹 Data Analysis: I have expertise in data analysis across various platforms: R (leveraging tidyverse, tidymodels, modeltime, and more), Python (utilizing pandas, sklearn, sktime, among others), SPSS, and SQL.
 - 📊 Dashboards and Data Visualization: Over recent years, I've acquired substantial hands-on experience with Microsoft PowerBi and have a foundational understanding of Tableau, inclusive of Tableau Prep.
--   FApplications: Web applications showcasing analytical findings are frequently developed by me using Streamlit and Shiny. Within the Shiny framework, I primarily utilize the flexdashboard package.💻
+-   Applications: Web applications showcasing analytical findings are frequently developed by me using Streamlit and Shiny. Within the Shiny framework, I primarily utilize the flexdashboard package.💻
     """
 )
 st.write("---")
@@ -173,9 +173,9 @@ def load_lottiefil(filepath: str):
 
 
 lottie_cv = load_lottiefil(
-    "/Users/bennson/Desktop/Data Science Journey/Streamlit/indices_crypto_app/lottie/cv_lottie.json")
+    "/Users/bennson/Desktop/DataScienceJourney/Streamlit/streamlit_published_app/lottie/cv_lottie.json")
 
-col3, col4, col5 = st.columns(3, gap="small")
+col3, col4, col5 = st.columns([1,2,1], gap="small")
 with col3:
     st.write("")
 
@@ -183,7 +183,7 @@ with col4:
     st_lottie(
         lottie_cv,
         height=300,
-        width=200
+        width=300
     )
 
 with col5:

@@ -1,4 +1,4 @@
-# cd /Users/bennson/Desktop/Data\ Science\ Journey/Streamlit/indices_crypto_app/
+# cd /Users/bennson/Desktop/DataScienceJourney/Streamlit/streamlit_published_app/
 # streamlit run 💹-Charts.py
 
 # import sys
@@ -35,7 +35,7 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-local_css("/Users/bennson/Desktop/Data Science Journey/Streamlit/indices_crypto_app/style/style.css")
+local_css("/Users/bennson/Desktop/DataScienceJourney/Streamlit/streamlit_published_app/style/style.css")
 
 # ---- widget section ----
 
@@ -46,9 +46,9 @@ def load_lottiefil(filepath: str):
 
 
 lottie_email = load_lottiefil(
-    "/Users/bennson/Desktop/Data Science Journey/Streamlit/indices_crypto_app/lottie/email_lottie.json")
+    "/Users/bennson/Desktop/DataScienceJourney/Streamlit/streamlit_published_app/lottie/email_lottie.json")
 
-col3, col4, col5 = st.columns(3, gap="small")
+col3, col4, col5 = st.columns([1,2,1], gap="small")
 with col3:
     st.write("")
 
@@ -56,7 +56,7 @@ with col4:
     st_lottie(
         lottie_email,
         height=300,
-        width=200
+        width=300
     )
 
 with col5:
