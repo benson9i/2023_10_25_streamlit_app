@@ -18,7 +18,7 @@ page_icon = ":books:"
 name_db = "Dominik Bernard"
 description = """
 I am a psychologist and hold a bachelor's degree in Business Psychology and two master's in Business Psychology and International Management.
-Moreover, I am working as a client-facing consulting data scientist (strategy consultant) for Roland Berger. 
+Moreover, I am working as a client-facing consulting data scientist (strategy consulting) for Roland Berger. 
 """
 email = "dominik.bernard98@googlemail.com"
 phone = "004915228913027"
@@ -57,7 +57,7 @@ st.write(
     """
 - 💹 Data Analysis: I have expertise in data analysis across various platforms: R (leveraging tidyverse, tidymodels, modeltime, and more), Python (utilizing pandas, sklearn, sktime, among others), SPSS, and SQL.
 - 📊 Dashboards and Data Visualization: Over recent years, I've acquired substantial hands-on experience with Microsoft PowerBi and have a foundational understanding of Tableau, inclusive of Tableau Prep.
--   Applications: Web applications showcasing analytical findings are frequently developed by me using Streamlit and Shiny. Within the Shiny framework, I primarily utilize the flexdashboard package.💻
+- 💻 Applications: Web applications showcasing analytical findings are frequently developed by me using Streamlit and Shiny. Within the Shiny framework, I primarily utilize the flexdashboard package.
     """
 )
 st.write("---")

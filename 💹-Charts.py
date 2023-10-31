@@ -9,6 +9,7 @@ import plotly.graph_objects as go
 from prophet import Prophet
 from streamlit_lottie import st_lottie
 
+# ---- Page setup ----
 st.set_page_config(layout="centered")
 st.title(":chart_with_downwards_trend: My Interactive Financial Charts")
 st.subheader("Visualizing Financial Data")
@@ -190,19 +191,19 @@ else:
     st.write("Make your selections in the sidebar, then press 'Show Plots'!")
 
 
-lottie_weird = load_lottiefil(
-    "lottie/weird_lottie.json")
+# lottie_weird = load_lottiefil(
+#     "lottie/weird_lottie.json")
 
-col1, col2, col3 = st.columns([1,2,1], gap="small")
-with col1:
-    st.write("")
+# col1, col2, col3 = st.columns([1,2,1], gap="small")
+# with col1:
+#     st.write("")
 
-with col2:
-    st_lottie(
-        lottie_weird,
-        height=300,
-        width=300
-    )
+# with col2:
+#     st_lottie(
+#         lottie_weird,
+#         height=300,
+#         width=300
+#     )
 
-with col3:
-    st.write("")
+# with col3:
+#     st.write("")
